@@ -57,6 +57,7 @@ class MainActivity : AppCompatActivity() {
                         intent.putExtra("BOOK_RELEASE", book.releaseDate)
                         intent.putExtra("BOOK_DESCRIPTION", book.description)
                         intent.putExtra("BOOK_COVER", book.cover)
+                        intent.putExtra("BOOK_PAGES", book.pages)
                         startActivity(intent)
                     }
                     binding.rvBooks.adapter = adapter

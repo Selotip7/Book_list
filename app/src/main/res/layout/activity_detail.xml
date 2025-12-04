@@ -89,6 +89,15 @@
                     android:textColor="@android:color/black"
                     tools:text="On his birthday, Harry Potter discovers that he is the son of two well-known wizards..."/>
 
+                <TextView
+                    android:id="@+id/txtPages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    tools:text="Pages: 223"/>
+
             </LinearLayout>
 
         </LinearLayout>

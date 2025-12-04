@@ -24,12 +24,18 @@ class DetailActivity : AppCompatActivity() {
         val releaseDate = intent.getStringExtra("BOOK_RELEASE")
         val description = intent.getStringExtra("BOOK_DESCRIPTION")
         val cover = intent.getStringExtra("BOOK_COVER")
+        val pages = intent.getIntExtra("BOOK_PAGES", 0)
 
         // Set data ke view
         binding.txtTitle.text = title
         binding.txtSubtitle.text = title
         binding.txtRelease.text = releaseDate
         binding.txtDescription.text = description
+
+        // Set pages
+        if (pages > 0) {
+            binding.txtPages.text = "Pages: $pages"
+        }
 
         // Load cover image
         Glide.with(this)
